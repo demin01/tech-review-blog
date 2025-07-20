@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TechTornado - Video Gallery" />
+  <title>TechTornado - Video Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎥 TechTornado Video Gallery</h1>
+    <input type="text" id="search" placeholder="Search videos..." onkeyup="filterVideos()" />
+    <button onclick="toggleMode()">🌙 Toggle Mode</button>
+  </header>
+  <main id="gallery">
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Tech Intro"></iframe>
+      <h3>Tech Intro</h3>
+      <p>Introduction to latest tech trends.</p>
+    </div>
+    <div class="video">
+      <video controls>
+        <source src="sample.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <h3>Offline Sample Video</h3>
+      <p>Local uploaded video for showcase.</p>
+    </div>
+  </main>
+  <footer>© 2025 TechTornado | Follow us on YouTube</footer>
+  <script src="script.js"></script>
+</body>
+</html>
